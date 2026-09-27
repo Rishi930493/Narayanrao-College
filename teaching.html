@@ -1,1814 +1,1126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Faculty & Staff | Narayanrao Amrutrao Deshmukh College</title>
-
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/teaching.css">
-
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-
-<!-- ================= HEADER ================= -->
-
-<section class="header">
-    <nav>
-
-        <a href="index.html">
-            <img src="image/favicon.ico" id="logo-img" alt="College Logo">
-        </a>
-
-        <div class="nav-links" id="navLinks">
-
-            <span class="icon" onclick="hidemenu()">✕</span>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="more.html">About Us</a></li>
-                <li><a href="index.html#course_call">Course</a></li>
-                <li>
-                    <a href="teaching.html" class="active">
-                        Faculty & Staff
-                    </a>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-        </div>
-
-        <span class="icon" onclick="showmenu()">☰</span>
-
-    </nav>
-</section>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="faculty-hero">
-
-    <div class="hero-orb orb-one"></div>
-    <div class="hero-orb orb-two"></div>
-    <div class="hero-orb orb-three"></div>
-
-    <div class="hero-content">
-
-        <span class="hero-label">
-            OUR ACADEMIC COMMUNITY
-        </span>
-
-        <h1>
-            Faculty <span>&</span> Staff
-        </h1>
-
-        <p>
-            Meet our dedicated faculty and staff members
-            supporting academic excellence, student development
-            and institutional activities.
-        </p>
-
-        <div class="hero-stat-row">
-
-            <div class="hero-stat">
-                <strong>07</strong>
-                <small>Sections</small>
-            </div>
-
-            <div class="hero-stat">
-                <strong>50+</strong>
-                <small>Members</small>
-            </div>
-
-            <div class="hero-stat">
-                <strong>100%</strong>
-                <small>Student Support</small>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= DEPARTMENT SELECTOR ================= -->
-
-<section class="department-section">
-
-    <div class="section-title">
-
-        <span>EXPLORE OUR TEAM</span>
-
-        <h2>Select Department</h2>
-
-        <p>
-            Select a department or section to view its
-            faculty and staff members.
-        </p>
-
-    </div>
-
-
-    <div class="department-bar">
-
-        <button class="department-btn active"
-                data-department="bca">
-            <span>💻</span>
-            BCA
-        </button>
-
-        <button class="department-btn"
-                data-department="ba">
-            <span>🎓</span>
-            BA
-        </button>
-
-        <button class="department-btn"
-                data-department="ma">
-            <span>📚</span>
-            MA
-        </button>
-
-        <button class="department-btn"
-                data-department="mca">
-            <span>🖥️</span>
-            MCA
-        </button>
-
-        <button class="department-btn"
-                data-department="administrative">
-            <span>🏢</span>
-            Administrative
-        </button>
-
-        <button class="department-btn"
-                data-department="scholarship">
-            <span>🎓</span>
-            Scholarship
-        </button>
-
-        <button class="department-btn"
-                data-department="exam">
-            <span>📝</span>
-            Exam Section
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FACULTY SECTION ================= -->
-
-<section class="faculty-section">
-
-    <div class="faculty-section-header">
-
-        <div>
-            <span class="current-label">
-                CURRENTLY VIEWING
-            </span>
-
-            <h2 id="currentDepartmentTitle">
-                BCA Department
-            </h2>
-        </div>
-
-        <div class="faculty-count">
-            <span id="facultyCount">5</span>
-            Members
-        </div>
-
-    </div>
-
-
-    <div class="faculty-grid" id="facultyGrid">
-
-
-        <!-- =================================================
-             BCA - 5 FACULTY
-        ================================================= -->
-
-        <article class="faculty-card" data-department="bca">
-
-            <div class="card-top bca-color">
-
-                <span class="department-badge">BCA</span>
-
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BCA Faculty">
-
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Dr. BCA Faculty 01</h3>
-
-                <p class="designation">
-                    Assistant Professor
-                </p>
-
-                <p class="qualification">
-                    MCA, NET / Ph.D.
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Dr. BCA Faculty 01',
-                        'Assistant Professor',
-                        'BCA Department',
-                        'MCA, NET / Ph.D.',
-                        '8+ Years',
-                        'faculty01@example.com',
-                        'image/profile.jpg',
-                        'resume/bca1.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/bca1.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <article class="faculty-card" data-department="bca">
-
-            <div class="card-top bca-color">
-                <span class="department-badge">BCA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BCA Faculty 02</h3>
-
-                <p class="designation">
-                    Assistant Professor
-                </p>
-
-                <p class="qualification">
-                    MCA, SET
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BCA Faculty 02',
-                        'Assistant Professor',
-                        'BCA Department',
-                        'MCA, SET',
-                        '7+ Years',
-                        'faculty02@example.com',
-                        'image/profile.jpg',
-                        'resume/bca2.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/bca2.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-         <article class="faculty-card" data-department="bca">
-
-            <div class="card-top bca-color">
-                <span class="department-badge">BCA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BCA Faculty 02</h3>
-
-                <p class="designation">
-                    Assistant Professor
-                </p>
-
-                <p class="qualification">
-                    MCA, SET
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BCA Faculty 02',
-                        'Assistant Professor',
-                        'BCA Department',
-                        'MCA, SET',
-                        '7+ Years',
-                        'faculty02@example.com',
-                        'image/profile.jpg',
-                        'resume/bca2.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/bca2.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <article class="faculty-card" data-department="bca">
-
-            <div class="card-top bca-color">
-                <span class="department-badge">BCA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BCA Faculty 03</h3>
-
-                <p class="designation">
-                    Lecturer
-                </p>
-
-                <p class="qualification">
-                    MCA
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BCA Faculty 03',
-                        'Lecturer',
-                        'BCA Department',
-                        'MCA',
-                        '5+ Years',
-                        'faculty03@example.com',
-                        'image/profile.jpg',
-                        'resume/bca3.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/bca3.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <article class="faculty-card" data-department="bca">
-
-            <div class="card-top bca-color">
-                <span class="department-badge">BCA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BCA Faculty 04</h3>
-
-                <p class="designation">
-                    Assistant Professor
-                </p>
-
-                <p class="qualification">
-                    MCA, NET
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BCA Faculty 04',
-                        'Assistant Professor',
-                        'BCA Department',
-                        'MCA, NET',
-                        '6+ Years',
-                        'faculty04@example.com',
-                        'image/profile.jpg',
-                        'resume/bca4.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/bca4.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        
-
-
-        <article class="faculty-card" data-department="bca">
-
-            <div class="card-top bca-color">
-                <span class="department-badge">BCA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BCA Faculty 05</h3>
-
-                <p class="designation">
-                    Lecturer
-                </p>
-
-                <p class="qualification">
-                    MCA
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BCA Faculty 05',
-                        'Lecturer',
-                        'BCA Department',
-                        'MCA',
-                        '4+ Years',
-                        'faculty05@example.com',
-                        'image/profile.jpg',
-                        'resume/bca5.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/bca5.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- =================================================
-             BA - 5 FACULTY
-        ================================================= -->
-
-        <article class="faculty-card" data-department="ba">
-
-            <div class="card-top ba-color">
-                <span class="department-badge">BA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Dr. BA Faculty 01</h3>
-
-                <p class="designation">
-                    Assistant Professor
-                </p>
-
-                <p class="qualification">
-                    M.A., NET / Ph.D.
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Dr. BA Faculty 01',
-                        'Assistant Professor',
-                        'BA Department',
-                        'M.A., NET / Ph.D.',
-                        '10+ Years',
-                        'ba01@example.com',
-                        'image/profile.jpg',
-                        'resume/ba1.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/ba1.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <article class="faculty-card" data-department="ba">
-
-            <div class="card-top ba-color">
-                <span class="department-badge">BA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BA Faculty 02</h3>
-
-                <p class="designation">
-                    Assistant Professor
-                </p>
-
-                <p class="qualification">
-                    M.A., SET
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BA Faculty 02',
-                        'Assistant Professor',
-                        'BA Department',
-                        'M.A., SET',
-                        '8+ Years',
-                        'ba02@example.com',
-                        'image/profile.jpg',
-                        'resume/ba2.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/ba2.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <article class="faculty-card" data-department="ba">
-
-            <div class="card-top ba-color">
-                <span class="department-badge">BA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BA Faculty 03</h3>
-
-                <p class="designation">
-                    Lecturer
-                </p>
-
-                <p class="qualification">
-                    M.A.
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BA Faculty 03',
-                        'Lecturer',
-                        'BA Department',
-                        'M.A.',
-                        '5+ Years',
-                        'ba03@example.com',
-                        'image/profile.jpg',
-                        'resume/ba3.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/ba3.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <article class="faculty-card" data-department="ba">
-
-            <div class="card-top ba-color">
-                <span class="department-badge">BA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BA Faculty 04</h3>
-
-                <p class="designation">
-                    Assistant Professor
-                </p>
-
-                <p class="qualification">
-                    M.A., NET
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BA Faculty 04',
-                        'Assistant Professor',
-                        'BA Department',
-                        'M.A., NET',
-                        '7+ Years',
-                        'ba04@example.com',
-                        'image/profile.jpg',
-                        'resume/ba4.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/ba4.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <article class="faculty-card" data-department="ba">
-
-            <div class="card-top ba-color">
-                <span class="department-badge">BA</span>
-                <div class="card-pattern"></div>
-
-                <img src="image/profile.jpg"
-                     class="faculty-photo"
-                     alt="BA Faculty">
-            </div>
-
-            <div class="faculty-info">
-
-                <div class="faculty-role">FACULTY</div>
-
-                <h3>Prof. BA Faculty 05</h3>
-
-                <p class="designation">
-                    Lecturer
-                </p>
-
-                <p class="qualification">
-                    M.A., SET
-                </p>
-
-                <div class="faculty-actions">
-
-                    <button class="profile-btn"
-                        onclick="openProfile(
-                        'Prof. BA Faculty 05',
-                        'Lecturer',
-                        'BA Department',
-                        'M.A., SET',
-                        '4+ Years',
-                        'ba05@example.com',
-                        'image/profile.jpg',
-                        'resume/ba5.pdf'
-                        )">
-                        👤 Profile
-                    </button>
-
-                    <a href="resume/ba5.pdf"
-                       class="resume-btn"
-                       download>
-                        ↓ Resume
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- =================================================
-             MA - 5 FACULTY
-        ================================================= -->
-
-        <article class="faculty-card" data-department="ma">
-            <div class="card-top ma-color">
-                <span class="department-badge">MA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Dr. MA Faculty 01</h3>
-                <p class="designation">Assistant Professor</p>
-                <p class="qualification">M.A., NET / Ph.D.</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Dr. MA Faculty 01','Assistant Professor','MA Department','M.A., NET / Ph.D.','12+ Years','ma01@example.com','image/profile.jpg','resume/ma1.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/ma1.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="ma">
-            <div class="card-top ma-color">
-                <span class="department-badge">MA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MA Faculty 02</h3>
-                <p class="designation">Assistant Professor</p>
-                <p class="qualification">M.A., SET</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MA Faculty 02','Assistant Professor','MA Department','M.A., SET','9+ Years','ma02@example.com','image/profile.jpg','resume/ma2.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/ma2.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="ma">
-            <div class="card-top ma-color">
-                <span class="department-badge">MA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MA Faculty 03</h3>
-                <p class="designation">Lecturer</p>
-                <p class="qualification">M.A.</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MA Faculty 03','Lecturer','MA Department','M.A.','6+ Years','ma03@example.com','image/profile.jpg','resume/ma3.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/ma3.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="ma">
-            <div class="card-top ma-color">
-                <span class="department-badge">MA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MA Faculty 04</h3>
-                <p class="designation">Assistant Professor</p>
-                <p class="qualification">M.A., NET</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MA Faculty 04','Assistant Professor','MA Department','M.A., NET','8+ Years','ma04@example.com','image/profile.jpg','resume/ma4.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/ma4.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="ma">
-            <div class="card-top ma-color">
-                <span class="department-badge">MA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MA Faculty 05</h3>
-                <p class="designation">Lecturer</p>
-                <p class="qualification">M.A., SET</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MA Faculty 05','Lecturer','MA Department','M.A., SET','5+ Years','ma05@example.com','image/profile.jpg','resume/ma5.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/ma5.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-
-        <!-- =================================================
-             MCA - 5 FACULTY
-        ================================================= -->
-
-        <article class="faculty-card" data-department="mca">
-            <div class="card-top mca-color">
-                <span class="department-badge">MCA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MCA Faculty 01</h3>
-                <p class="designation">Assistant Professor</p>
-                <p class="qualification">MCA, NET</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MCA Faculty 01','Assistant Professor','MCA Department','MCA, NET','9+ Years','mca01@example.com','image/profile.jpg','resume/mca1.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/mca1.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="mca">
-            <div class="card-top mca-color">
-                <span class="department-badge">MCA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MCA Faculty 02</h3>
-                <p class="designation">Assistant Professor</p>
-                <p class="qualification">MCA, SET</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MCA Faculty 02','Assistant Professor','MCA Department','MCA, SET','7+ Years','mca02@example.com','image/profile.jpg','resume/mca2.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/mca2.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="mca">
-            <div class="card-top mca-color">
-                <span class="department-badge">MCA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MCA Faculty 03</h3>
-                <p class="designation">Lecturer</p>
-                <p class="qualification">MCA</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MCA Faculty 03','Lecturer','MCA Department','MCA','5+ Years','mca03@example.com','image/profile.jpg','resume/mca3.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/mca3.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="mca">
-            <div class="card-top mca-color">
-                <span class="department-badge">MCA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MCA Faculty 04</h3>
-                <p class="designation">Assistant Professor</p>
-                <p class="qualification">MCA, NET</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MCA Faculty 04','Assistant Professor','MCA Department','MCA, NET','8+ Years','mca04@example.com','image/profile.jpg','resume/mca4.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/mca4.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="mca">
-            <div class="card-top mca-color">
-                <span class="department-badge">MCA</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="MCA Faculty">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">FACULTY</div>
-                <h3>Prof. MCA Faculty 05</h3>
-                <p class="designation">Lecturer</p>
-                <p class="qualification">MCA, SET</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Prof. MCA Faculty 05','Lecturer','MCA Department','MCA, SET','4+ Years','mca05@example.com','image/profile.jpg','resume/mca5.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/mca5.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-
-        <!-- =================================================
-             ADMINISTRATIVE - 5 STAFF
-        ================================================= -->
-
-        <article class="faculty-card" data-department="administrative">
-            <div class="card-top admin-color">
-                <span class="department-badge">ADMIN</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Administrative Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">ADMINISTRATION</div>
-                <h3>Administrative Staff 01</h3>
-                <p class="designation">Office Superintendent</p>
-                <p class="qualification">Administration</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Administrative Staff 01','Office Superintendent','Administrative Section','Administration','15+ Years','admin01@example.com','image/profile.jpg','resume/admin1.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/admin1.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="administrative">
-            <div class="card-top admin-color">
-                <span class="department-badge">ADMIN</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Administrative Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">ADMINISTRATION</div>
-                <h3>Administrative Staff 02</h3>
-                <p class="designation">Senior Clerk</p>
-                <p class="qualification">Administration</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Administrative Staff 02','Senior Clerk','Administrative Section','Administration','12+ Years','admin02@example.com','image/profile.jpg','resume/admin2.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/admin2.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="administrative">
-            <div class="card-top admin-color">
-                <span class="department-badge">ADMIN</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Administrative Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">ADMINISTRATION</div>
-                <h3>Administrative Staff 03</h3>
-                <p class="designation">Clerk</p>
-                <p class="qualification">Administration</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Administrative Staff 03','Clerk','Administrative Section','Administration','9+ Years','admin03@example.com','image/profile.jpg','resume/admin3.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/admin3.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="administrative">
-            <div class="card-top admin-color">
-                <span class="department-badge">ADMIN</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Administrative Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">ADMINISTRATION</div>
-                <h3>Administrative Staff 04</h3>
-                <p class="designation">Junior Clerk</p>
-                <p class="qualification">Administration</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Administrative Staff 04','Junior Clerk','Administrative Section','Administration','6+ Years','admin04@example.com','image/profile.jpg','resume/admin4.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/admin4.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="administrative">
-            <div class="card-top admin-color">
-                <span class="department-badge">ADMIN</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Administrative Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">ADMINISTRATION</div>
-                <h3>Administrative Staff 05</h3>
-                <p class="designation">Office Assistant</p>
-                <p class="qualification">Administration</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Administrative Staff 05','Office Assistant','Administrative Section','Administration','5+ Years','admin05@example.com','image/profile.jpg','resume/admin5.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/admin5.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-
-        <!-- =================================================
-             SCHOLARSHIP - 5 STAFF
-        ================================================= -->
-
-        <article class="faculty-card" data-department="scholarship">
-            <div class="card-top scholarship-color">
-                <span class="department-badge">SCHOLARSHIP</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Scholarship Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">STUDENT SUPPORT</div>
-                <h3>Scholarship Staff 01</h3>
-                <p class="designation">Scholarship Coordinator</p>
-                <p class="qualification">Scholarship Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Scholarship Staff 01','Scholarship Coordinator','Scholarship Section','Scholarship Administration','8+ Years','scholarship01@example.com','image/profile.jpg','resume/scholarship1.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/scholarship1.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="scholarship">
-            <div class="card-top scholarship-color">
-                <span class="department-badge">SCHOLARSHIP</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Scholarship Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">STUDENT SUPPORT</div>
-                <h3>Scholarship Staff 02</h3>
-                <p class="designation">Scholarship Assistant</p>
-                <p class="qualification">Scholarship Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Scholarship Staff 02','Scholarship Assistant','Scholarship Section','Scholarship Administration','7+ Years','scholarship02@example.com','image/profile.jpg','resume/scholarship2.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/scholarship2.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="scholarship">
-            <div class="card-top scholarship-color">
-                <span class="department-badge">SCHOLARSHIP</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Scholarship Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">STUDENT SUPPORT</div>
-                <h3>Scholarship Staff 03</h3>
-                <p class="designation">Scholarship Assistant</p>
-                <p class="qualification">Scholarship Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Scholarship Staff 03','Scholarship Assistant','Scholarship Section','Scholarship Administration','6+ Years','scholarship03@example.com','image/profile.jpg','resume/scholarship3.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/scholarship3.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="scholarship">
-            <div class="card-top scholarship-color">
-                <span class="department-badge">SCHOLARSHIP</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Scholarship Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">STUDENT SUPPORT</div>
-                <h3>Scholarship Staff 04</h3>
-                <p class="designation">Scholarship Assistant</p>
-                <p class="qualification">Scholarship Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Scholarship Staff 04','Scholarship Assistant','Scholarship Section','Scholarship Administration','5+ Years','scholarship04@example.com','image/profile.jpg','resume/scholarship4.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/scholarship4.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="scholarship">
-            <div class="card-top scholarship-color">
-                <span class="department-badge">SCHOLARSHIP</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Scholarship Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">STUDENT SUPPORT</div>
-                <h3>Scholarship Staff 05</h3>
-                <p class="designation">Scholarship Assistant</p>
-                <p class="qualification">Scholarship Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Scholarship Staff 05','Scholarship Assistant','Scholarship Section','Scholarship Administration','4+ Years','scholarship05@example.com','image/profile.jpg','resume/scholarship5.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/scholarship5.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-
-        <!-- =================================================
-             EXAM - 5 STAFF
-        ================================================= -->
-
-        <article class="faculty-card" data-department="exam">
-            <div class="card-top exam-color">
-                <span class="department-badge">EXAM</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Exam Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">EXAMINATION</div>
-                <h3>Exam Staff 01</h3>
-                <p class="designation">Examination Coordinator</p>
-                <p class="qualification">Examination Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Exam Staff 01','Examination Coordinator','Exam Section','Examination Administration','10+ Years','exam01@example.com','image/profile.jpg','resume/exam1.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/exam1.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="exam">
-            <div class="card-top exam-color">
-                <span class="department-badge">EXAM</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Exam Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">EXAMINATION</div>
-                <h3>Exam Staff 02</h3>
-                <p class="designation">Senior Examination Clerk</p>
-                <p class="qualification">Examination Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Exam Staff 02','Senior Examination Clerk','Exam Section','Examination Administration','9+ Years','exam02@example.com','image/profile.jpg','resume/exam2.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/exam2.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="exam">
-            <div class="card-top exam-color">
-                <span class="department-badge">EXAM</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Exam Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">EXAMINATION</div>
-                <h3>Exam Staff 03</h3>
-                <p class="designation">Examination Clerk</p>
-                <p class="qualification">Examination Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Exam Staff 03','Examination Clerk','Exam Section','Examination Administration','7+ Years','exam03@example.com','image/profile.jpg','resume/exam3.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/exam3.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="exam">
-            <div class="card-top exam-color">
-                <span class="department-badge">EXAM</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Exam Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">EXAMINATION</div>
-                <h3>Exam Staff 04</h3>
-                <p class="designation">Examination Assistant</p>
-                <p class="qualification">Examination Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Exam Staff 04','Examination Assistant','Exam Section','Examination Administration','6+ Years','exam04@example.com','image/profile.jpg','resume/exam4.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/exam4.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="faculty-card" data-department="exam">
-            <div class="card-top exam-color">
-                <span class="department-badge">EXAM</span>
-                <div class="card-pattern"></div>
-                <img src="image/profile.jpg" class="faculty-photo" alt="Exam Staff">
-            </div>
-
-            <div class="faculty-info">
-                <div class="faculty-role">EXAMINATION</div>
-                <h3>Exam Staff 05</h3>
-                <p class="designation">Examination Assistant</p>
-                <p class="qualification">Examination Section</p>
-
-                <div class="faculty-actions">
-                    <button class="profile-btn"
-                        onclick="openProfile('Exam Staff 05','Examination Assistant','Exam Section','Examination Administration','5+ Years','exam05@example.com','image/profile.jpg','resume/exam5.pdf')">
-                        👤 Profile
-                    </button>
-                    <a href="resume/exam5.pdf" class="resume-btn" download>↓ Resume</a>
-                </div>
-            </div>
-        </article>
-
-    </div>
-
-
-    <div class="no-members" id="noMembers">
-
-        <div>🔍</div>
-
-        <h3>No Staff Added Yet</h3>
-
-        <p>
-            Faculty or staff information for this
-            section will be added soon.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROFILE MODAL ================= -->
-
-<div class="profile-modal" id="profileModal">
-
-    <div class="profile-modal-box">
-
-        <button class="modal-close"
-                onclick="closeProfile()">
-            ×
-        </button>
-
-        <div class="modal-header">
-
-            <div class="modal-photo-wrapper">
-
-                <img src="image/profile.jpg"
-                     id="modalPhoto"
-                     alt="Faculty">
-
-            </div>
-
-            <span class="modal-label">
-                FACULTY / STAFF PROFILE
-            </span>
-
-            <h2 id="profileName">
-                Faculty Name
-            </h2>
-
-            <p id="profileDesignation"
-               class="modal-designation">
-                Assistant Professor
-            </p>
-
-        </div>
-
-
-        <div class="profile-details">
-
-            <div class="profile-detail-box">
-                <span>DEPARTMENT</span>
-                <strong id="profileDepartment">
-                    BCA Department
-                </strong>
-            </div>
-
-            <div class="profile-detail-box">
-                <span>QUALIFICATION</span>
-                <strong id="profileQualification">
-                    MCA, NET
-                </strong>
-            </div>
-
-            <div class="profile-detail-box">
-                <span>EXPERIENCE</span>
-                <strong id="profileExperience">
-                    8+ Years
-                </strong>
-            </div>
-
-            <div class="profile-detail-box">
-                <span>EMAIL</span>
-                <strong id="profileEmail">
-                    faculty@example.com
-                </strong>
-            </div>
-
-        </div>
-
-
-        <div class="modal-bottom">
-
-            <a href="#"
-               id="modalResume"
-               class="modal-resume-btn"
-               download>
-                ↓ Download Resume
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <div class="footer-col">
-
-            <img src="image/favicon.ico"
-                 class="footer-logo"
-                 alt="College Logo">
-
-            <h3>
-                Narayanrao Amrutrao Deshmukh College
-            </h3>
-
-            <p>
-                Narayanrao Amrutrao Deshmukh Arts And
-                Commerce College, Chandur Bazar provides
-                quality education and opportunities for
-                students to build a successful future.
-            </p>
-
-        </div>
-
-
-        <div class="footer-col">
-
-            <h3>Quick Links</h3>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Admission_page.html">Admission</a></li>
-                <li><a href="index.html#course_call">Courses</a></li>
-                <li><a href="fees_page.html">Fees</a></li>
-                <li><a href="Contact_page.html">Contact</a></li>
-            </ul>
-
-        </div>
-
-
-        <div class="footer-col">
-
-            <h3>Courses</h3>
-
-            <ul>
-                <li><a href="index.html#course_call">BCA</a></li>
-                <li><a href="index.html#course_call">BA</a></li>
-                <li><a href="index.html#course_call">MA</a></li>
-                <li><a href="index.html#course_call">MCA</a></li>
-            </ul>
-
-        </div>
-
-
-        <div class="footer-col">
-
-            <h3>Contact Us</h3>
-
-            <p>📍 Chandur Bazar, Amravati, Maharashtra</p>
-            <p>📞 +91 XXXXX XXXXX</p>
-            <p>✉️ college@example.com</p>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Narayanrao Amrutrao Deshmukh College.
-            All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
-
-
-<!-- ================= JAVASCRIPT ================= -->
-
-<script>
-
-/* MOBILE MENU */
-
-function showmenu() {
-    document.getElementById("navLinks").style.right = "0";
+/* =========================================================
+   FACULTY & STAFF PAGE
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-function hidemenu() {
-    document.getElementById("navLinks").style.right = "-200px";
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+    overflow-x: hidden;
+}
+
+body.modal-open {
+    overflow: hidden;
 }
 
 
-/* DEPARTMENT FILTER */
+/* =========================================================
+   HERO
+========================================================= */
 
-const departmentButtons =
-    document.querySelectorAll(".department-btn");
+.faculty-hero {
+    position: relative;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
 
-const facultyCards =
-    document.querySelectorAll(".faculty-card");
+    background:
+        radial-gradient(circle at 10% 20%,
+        rgba(99,102,241,.12), transparent 30%),
 
-const departmentTitle =
-    document.getElementById("currentDepartmentTitle");
+        radial-gradient(circle at 90% 20%,
+        rgba(236,72,153,.12), transparent 30%),
 
-const facultyCount =
-    document.getElementById("facultyCount");
+        linear-gradient(135deg,
+        #ffffff,
+        #f5f3ff,
+        #eff6ff);
+}
 
-const noMembers =
-    document.getElementById("noMembers");
+.hero-content {
+    position: relative;
+    z-index: 5;
+    max-width: 850px;
+    padding: 65px 20px;
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 8px 19px;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #ede9fe,
+        #fce7f3
+    );
+
+    color: #6d28d9;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    margin-top: 17px;
+    font-size: 55px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.hero-content h1 span {
+    background: linear-gradient(
+        90deg,
+        #6366f1,
+        #a855f7,
+        #ec4899
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    max-width: 700px;
+    margin: 17px auto 28px;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+}
 
 
-const departmentNames = {
+/* HERO ORBS */
 
-    bca: "BCA Department",
+.hero-orb {
+    position: absolute;
+    border-radius: 50%;
+}
 
-    ba: "BA Department",
+.orb-one {
+    width: 280px;
+    height: 280px;
+    left: -120px;
+    top: -100px;
+    background: rgba(99,102,241,.13);
+}
 
-    ma: "MA Department",
+.orb-two {
+    width: 210px;
+    height: 210px;
+    right: 7%;
+    top: 20px;
+    background: rgba(236,72,153,.12);
+}
 
-    mca: "MCA Department",
-
-    administrative: "Administrative Section",
-
-    scholarship: "Scholarship Section",
-
-    exam: "Exam Section"
-
-};
-
-
-function showDepartment(department) {
-
-    let count = 0;
-
-    facultyCards.forEach(function(card) {
-
-        if (card.dataset.department === department) {
-
-            card.classList.add("show-card");
-
-            count++;
-
-        } else {
-
-            card.classList.remove("show-card");
-
-        }
-
-    });
+.orb-three {
+    width: 160px;
+    height: 160px;
+    left: 40%;
+    bottom: -100px;
+    background: rgba(6,182,212,.10);
+}
 
 
-    departmentTitle.textContent =
-        departmentNames[department];
+/* HERO STATS */
 
-    facultyCount.textContent =
-        count;
+.hero-stat-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-stat {
+    min-width: 115px;
+    padding: 13px 18px;
+    border-radius: 15px;
+    background: rgba(255,255,255,.85);
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 25px rgba(15,23,42,.06);
+}
+
+.hero-stat strong {
+    display: block;
+    font-size: 21px;
+
+    background: linear-gradient(
+        90deg,
+        #4f46e5,
+        #db2777
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-stat small {
+    color: #64748b;
+    font-size: 10px;
+    font-weight: 700;
+}
 
 
-    if (count === 0) {
+/* =========================================================
+   DEPARTMENT
+========================================================= */
 
-        noMembers.classList.add("show-empty");
+.department-section {
+    padding: 60px 5% 25px;
+    background: white;
+}
 
-    } else {
+.section-title {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
 
-        noMembers.classList.remove("show-empty");
+.section-title > span {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 50px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
 
+.section-title h2 {
+    margin-top: 11px;
+    font-size: 34px;
+    font-weight: 900;
+
+    background: linear-gradient(
+        90deg,
+        #312e81,
+        #7c3aed,
+        #db2777
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title p {
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   DEPARTMENT BAR
+========================================================= */
+
+.department-bar {
+    max-width: 1200px;
+    margin: 30px auto 0;
+
+    display: flex;
+    gap: 8px;
+
+    padding: 8px;
+
+    overflow-x: auto;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 28px rgba(15,23,42,.06);
+}
+
+.department-btn {
+    flex: 1 0 auto;
+
+    min-width: 115px;
+
+    border: none;
+
+    padding: 12px 14px;
+
+    border-radius: 12px;
+
+    background: transparent;
+
+    color: #475569;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.department-btn:hover {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+.department-btn.active {
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed,
+        #db2777
+    );
+
+    box-shadow:
+        0 8px 20px rgba(79,70,229,.22);
+}
+
+.department-btn span {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   FACULTY SECTION
+========================================================= */
+
+.faculty-section {
+    padding: 38px 5% 80px;
+
+    background:
+        radial-gradient(
+            circle at 0% 20%,
+            rgba(99,102,241,.06),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 100% 80%,
+            rgba(236,72,153,.06),
+            transparent 25%
+        ),
+
+        #f8fafc;
+}
+
+.faculty-section-header {
+    max-width: 1150px;
+    margin: 0 auto 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-label {
+    color: #64748b;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.faculty-section-header h2 {
+    margin-top: 4px;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.faculty-count {
+    padding: 8px 14px;
+    border-radius: 50px;
+
+    background: white;
+    border: 1px solid #e2e8f0;
+
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.faculty-count span {
+    color: #6d28d9;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.faculty-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.faculty-card {
+    display: none;
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 19px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 8px 25px rgba(15,23,42,.07);
+
+    transition: .35s ease;
+}
+
+.faculty-card.show-card {
+    display: block;
+
+    animation:
+        cardAppear .4s ease;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faculty-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(79,70,229,.13);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.card-top {
+    position: relative;
+
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    overflow: hidden;
+}
+
+.bca-color {
+    background: linear-gradient(
+        135deg,
+        #c7d2fe,
+        #ddd6fe,
+        #fbcfe8
+    );
+}
+
+.ba-color {
+    background: linear-gradient(
+        135deg,
+        #bae6fd,
+        #bfdbfe,
+        #ddd6fe
+    );
+}
+
+.ma-color {
+    background: linear-gradient(
+        135deg,
+        #fbcfe8,
+        #f5d0fe,
+        #ddd6fe
+    );
+}
+
+.mca-color {
+    background: linear-gradient(
+        135deg,
+        #a5f3fc,
+        #bae6fd,
+        #c7d2fe
+    );
+}
+
+.admin-color {
+    background: linear-gradient(
+        135deg,
+        #bbf7d0,
+        #a7f3d0,
+        #bae6fd
+    );
+}
+
+.scholarship-color {
+    background: linear-gradient(
+        135deg,
+        #fde68a,
+        #fed7aa,
+        #fbcfe8
+    );
+}
+
+.exam-color {
+    background: linear-gradient(
+        135deg,
+        #fecaca,
+        #fed7aa,
+        #fef3c7
+    );
+}
+
+
+/* PATTERN */
+
+.card-pattern {
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    top: -110px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79,70,229,.35),
+            rgba(236,72,153,.20)
+        );
+}
+
+
+/* BADGE */
+
+.department-badge {
+    position: absolute;
+
+    z-index: 5;
+
+    top: 10px;
+    left: 10px;
+
+    padding: 6px 9px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.92);
+
+    color: #4f46e5;
+
+    font-size: 8px;
+    font-weight: 900;
+
+    letter-spacing: .7px;
+
+    box-shadow:
+        0 5px 15px rgba(15,23,42,.10);
+}
+
+
+/* PHOTO */
+
+.faculty-photo {
+    position: relative;
+    z-index: 4;
+
+    width: 140px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius:
+        75px
+        75px
+        14px
+        14px;
+
+    border: 5px solid white;
+
+    box-shadow:
+        0 12px 25px rgba(49,46,129,.18);
+
+    transition: .4s ease;
+}
+
+.faculty-card:hover .faculty-photo {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   CARD INFO
+========================================================= */
+
+.faculty-info {
+    padding: 15px 13px 16px;
+    text-align: center;
+}
+
+.faculty-role {
+    margin-bottom: 5px;
+
+    color: #8b5cf6;
+
+    font-size: 8px;
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+.faculty-info h3 {
+    font-size: 15px;
+    font-weight: 900;
+
+    color: #172033;
+
+    line-height: 1.3;
+}
+
+.designation {
+    margin-top: 5px;
+
+    color: #7c3aed;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.qualification {
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.faculty-actions {
+    display: flex;
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 12px;
+}
+
+.profile-btn,
+.resume-btn {
+    min-height: 31px;
+
+    padding: 6px 8px;
+
+    border-radius: 8px;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .25s ease;
+}
+
+.profile-btn {
+    border: 1px solid #ddd6fe;
+
+    background: #f5f3ff;
+
+    color: #6d28d9;
+}
+
+.profile-btn:hover {
+    background: #6366f1;
+    color: white;
+}
+
+.resume-btn {
+    border: 1px solid #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+.resume-btn:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.no-members {
+    display: none;
+
+    max-width: 450px;
+
+    margin: 40px auto;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border: 1px solid #e2e8f0;
+}
+
+.no-members.show-empty {
+    display: block;
+}
+
+.no-members > div {
+    font-size: 40px;
+}
+
+.no-members h3 {
+    margin-top: 8px;
+}
+
+.no-members p {
+    margin-top: 6px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.profile-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15,23,42,.70);
+
+    backdrop-filter: blur(8px);
+}
+
+.profile-modal.show {
+    display: flex;
+}
+
+.profile-modal-box {
+    position: relative;
+
+    width: 100%;
+    max-width: 480px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.30);
+
+    animation:
+        modalUp .3s ease;
+}
+
+@keyframes modalUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* CLOSE */
+
+.modal-close {
+    position: absolute;
+
+    top: 12px;
+    right: 13px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    color: #475569;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background: #ef4444;
+    color: white;
+}
+
+
+/* MODAL HEADER */
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-photo-wrapper {
+    width: 95px;
+    height: 95px;
+
+    margin: 0 auto 14px;
+
+    padding: 4px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6366f1,
+            #a855f7,
+            #ec4899
+        );
+}
+
+.modal-photo-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid white;
+}
+
+.modal-label {
+    color: #7c3aed;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+.profile-modal-box h2 {
+    margin-top: 7px;
+
+    font-size: 24px;
+
+    color: #172033;
+}
+
+.modal-designation {
+    margin-top: 4px;
+
+    color: #7c3aed;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* DETAILS */
+
+.profile-details {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 9px;
+
+    margin-top: 22px;
+}
+
+.profile-detail-box {
+    padding: 12px;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #f5f3ff
+        );
+
+    border: 1px solid #e2e8f0;
+}
+
+.profile-detail-box span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+.profile-detail-box strong {
+    color: #334155;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    word-break: break-word;
+}
+
+
+/* MODAL RESUME */
+
+.modal-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.modal-resume-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 18px;
+
+    border-radius: 11px;
+
+    color: white;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #7c3aed,
+            #db2777
+        );
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .faculty-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
     }
 
 }
 
 
-/* BUTTON CLICK */
+/* =========================================================
+   MOBILE
+========================================================= */
 
-departmentButtons.forEach(function(button) {
+@media (max-width: 750px) {
 
-    button.addEventListener("click", function() {
+    .faculty-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
 
-        departmentButtons.forEach(function(btn) {
-            btn.classList.remove("active");
-        });
-
-        this.classList.add("active");
-
-        const department =
-            this.dataset.department;
-
-        showDepartment(department);
-
-    });
-
-});
-
-
-/* DEFAULT */
-
-showDepartment("bca");
-
-
-
-/* PROFILE MODAL */
-
-function openProfile(
-    name,
-    designation,
-    department,
-    qualification,
-    experience,
-    email,
-    photo,
-    resume
-) {
-
-    document.getElementById("profileName")
-        .textContent = name;
-
-    document.getElementById("profileDesignation")
-        .textContent = designation;
-
-    document.getElementById("profileDepartment")
-        .textContent = department;
-
-    document.getElementById("profileQualification")
-        .textContent = qualification;
-
-    document.getElementById("profileExperience")
-        .textContent = experience;
-
-    document.getElementById("profileEmail")
-        .textContent = email;
-
-    document.getElementById("modalPhoto")
-        .src = photo;
-
-    document.getElementById("modalResume")
-        .href = resume;
-
-    document.getElementById("profileModal")
-        .classList.add("show");
-
-    document.body.classList.add("modal-open");
-
-}
-
-
-/* CLOSE MODAL */
-
-function closeProfile() {
-
-    document.getElementById("profileModal")
-        .classList.remove("show");
-
-    document.body.classList.remove("modal-open");
-
-}
-
-
-/* OUTSIDE CLICK */
-
-document.getElementById("profileModal")
-    .addEventListener("click", function(event) {
-
-        if (event.target === this) {
-            closeProfile();
-        }
-
-    });
-
-
-/* ESC */
-
-document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-        closeProfile();
+        gap: 13px;
     }
 
-});
+    .faculty-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-</script>
+    .faculty-photo {
+        width: 125px;
+        height: 165px;
+    }
 
-</body>
-</html>
+    .card-top {
+        height: 185px;
+    }
+
+    .faculty-info h3 {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    .department-section {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .department-bar {
+        justify-content: flex-start;
+    }
+
+    .faculty-section-header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .faculty-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .card-top {
+        height: 175px;
+    }
+
+    .faculty-photo {
+        width: 115px;
+        height: 155px;
+    }
+
+    .faculty-info {
+        padding: 12px 8px;
+    }
+
+    .faculty-info h3 {
+        font-size: 13px;
+    }
+
+    .designation {
+        font-size: 10px;
+    }
+
+    .qualification {
+        font-size: 9px;
+    }
+
+    .faculty-actions {
+        flex-direction: column;
+    }
+
+    .profile-btn,
+    .resume-btn {
+        width: 100%;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-top {
+        height: 205px;
+    }
+
+    .faculty-photo {
+        width: 140px;
+        height: 180px;
+    }
+
+}
