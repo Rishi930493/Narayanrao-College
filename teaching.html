@@ -1635,11 +1635,15 @@
 </div>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer class="footer">
 
     <div class="footer-container">
+
+        <!-- About College -->
 
         <div class="footer-col">
 
@@ -1648,71 +1652,213 @@
                  alt="College Logo">
 
             <h3>
-                Narayanrao Amrutrao Deshmukh College
+                Narayanrao Amrutrao Deshmukh Arts And Commerce College, Chandur Bazar
             </h3>
 
             <p>
-                Narayanrao Amrutrao Deshmukh Arts And
-                Commerce College, Chandur Bazar provides
-                quality education and opportunities for
-                students to build a successful future.
+                Narayanrao Amrutrao Deshmukh Arts And Commerce College,
+                Chandur Bazar provides quality education
+                and opportunities for students to build
+                a successful future.
             </p>
 
         </div>
 
+
+        <!-- Quick Links -->
 
         <div class="footer-col">
 
             <h3>Quick Links</h3>
 
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Admission_page.html">Admission</a></li>
-                <li><a href="index.html#course_call">Courses</a></li>
-                <li><a href="fees_page.html">Fees</a></li>
-                <li><a href="Contact_page.html">Contact</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="Admission_page.html">Admission</a>
+                </li>
+
+                <li>
+                    <a href="index.html#course_call">Courses</a>
+                </li>
+
+                <li>
+                    <a href="fees_page.html">Fees</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
             </ul>
 
         </div>
 
+
+        <!-- Courses -->
 
         <div class="footer-col">
 
             <h3>Courses</h3>
 
             <ul>
-                <li><a href="index.html#course_call">BCA</a></li>
-                <li><a href="index.html#course_call">BA</a></li>
-                <li><a href="index.html#course_call">MA</a></li>
-                <li><a href="index.html#course_call">MCA</a></li>
+
+                <li>
+                    <a href="index.html#course_call">BCA</a>
+                </li>
+
+                <li>
+                    <a href="index.html#course_call">BA</a>
+                </li>
+
+                <li>
+                    <a href="index.html#course_call">
+                        MA
+                    </a>
+                </li>
+
             </ul>
 
         </div>
 
 
+        <!-- Contact -->
+
         <div class="footer-col">
 
             <h3>Contact Us</h3>
 
-            <p>📍 Chandur Bazar, Amravati, Maharashtra</p>
-            <p>📞 +91 XXXXX XXXXX</p>
-            <p>✉️ college@example.com</p>
+            <p>
+                📍 Chandur Bazar,<br>
+                Amravati, Maharashtra
+            </p>
+
+            <p>
+                📞 +91 9960616448
+            </p>
+
+            <p>
+                ✉️ nadm143@yahoo.com
+            </p>
 
         </div>
 
     </div>
 
 
+    <!-- Bottom Footer -->
+
     <div class="footer-bottom">
 
         <p>
-            © 2026 Narayanrao Amrutrao Deshmukh College.
+            © 2026 Narayanrao Amrutrao Deshmukh Arts And Commerce College, Chandur Bazar.
             All Rights Reserved.
         </p>
 
+        
     </div>
 
 </footer>
+
+</section>
+
+
+
+
+    <!-- CHAT BUTTON -->
+<div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+<!-- CHAT BOX -->
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">
+    Chat Support
+    <span onclick="toggleChat()">✖</span>
+  </div>
+
+  <div class="chat-body" id="chatMessages">
+    <div class="bot-msg">Hello 👋 Welcome to Narayanrao Deshmukh Arts & Commerce College, Chandur Bazar !</div>
+  </div>
+
+  <input type="text" id="chatInput" placeholder="Type message..." onkeypress="sendMsg(event)">
+</div>
+
+
+
+
+<!-- =========================================
+     PROFILE POPUP
+========================================= -->
+
+<div class="profile-modal" id="profileModal">
+
+    <div class="profile-modal-box">
+
+        <!-- CLOSE -->
+
+        <button class="profile-close"
+                onclick="closeProfile()">
+            ×
+        </button>
+
+
+        <div class="profile-content">
+
+
+            <!-- PHOTO -->
+
+            <div class="profile-image-section">
+
+                <div class="profile-image-border">
+
+                    <img id="profileImage"
+                         src=""
+                         alt="Profile Photo">
+
+                </div>
+
+            </div>
+
+
+            <!-- DETAILS -->
+
+            <div class="profile-details">
+
+                <span class="profile-role"
+                      id="profileRole">
+                </span>
+
+
+                <h2 id="profileName">
+                </h2>
+
+
+                <div class="qualification"
+                     id="profileQualification">
+                </div>
+
+
+                <div class="profile-description">
+
+                    <p id="profileDescription">
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
 
 
 <!-- ================= JAVASCRIPT ================= -->
